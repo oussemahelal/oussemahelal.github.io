@@ -3,10 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oussema Helal</title>
+    <title>Oussema Helal | Mobile Developer</title>
+    <style>
+        :root {
+            --primary: #E53935; /* TunisieExam Brand Red */
+            --dark: #121418;
+            --light: #f4f4f9;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        h1 { margin-bottom: 8px; font-weight: 800; font-size: 2rem; }
+        .subtitle { color: #666; margin-bottom: 32px; font-size: 1.1rem; }
+        
+        .app-card {
+            border: 2px solid #f0f0f0;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 32px;
+            transition: transform 0.2s;
+        }
+        .app-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .app-title { font-weight: bold; font-size: 1.2rem; color: var(--primary); }
+        
+        .links { display: flex; flex-direction: column; gap: 12px; }
+        .btn {
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-outline { border: 2px solid #eee; color: #555; }
+        .btn-outline:hover { background: #fafafa; border-color: #ddd; }
+
+        footer { margin-top: 40px; font-size: 0.9rem; color: #999; }
+        a { color: inherit; }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>This website hosts my app resources.</p>
+
+<div class="container">
+    <h1>Oussema Helal</h1>
+    <p class="subtitle">Android Developer</p>
+
+    <div class="app-card">
+        <div class="app-title">TunisieExam</div>
+        <p>Your ultimate companion for primary school exam preparation in Tunisia.</p>
+        <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.helal.digital" class="btn btn-primary">Get it on Google Play</a>
+            <a href="privacy_policy_tunisie-exam.html" class="btn btn-outline">Privacy Policy</a>
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="app-ads.txt" class="btn btn-outline">App-Ads.txt</a>
+        <a href="https://github.com/oussemahelal" class="btn btn-outline">GitHub Profile</a>
+    </div>
+
+    <footer>
+        &copy; 2024 Helal Digital. All rights reserved.
+    </footer>
+</div>
+
 </body>
 </html>
